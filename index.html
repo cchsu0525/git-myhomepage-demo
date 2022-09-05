@@ -6,8 +6,10 @@
     <!-- 註解說明欄 -->
     <!-- 輸出文字 CTRL+/ -->
     <title>健身網站資訊</title>
+    <link rel="stylesheet" href="./css/style.css">
+
     <!--style 是以區域方式來設定 -->
-    <style>
+    <!-- <style>
         body {
             background-color: rgb(253, 247, 240);
             font-family: 標楷體, 新細明體, 'Arial Narrow Bold', sans-serif;
@@ -55,7 +57,20 @@
             padding: 6px;
         }
 
+        .text-4 {
+            text-align: left;
+            line-height: 24px;
+        }
+
+        .text-4 a {
+            background-color: crimson;
+            color: white;
+
+        }
+
         .sub-title {
+            display: inline;
+            margin: 6px 0px;
             background-color: blueviolet;
             color: white;
             font-size: 1.5ram;
@@ -119,6 +134,7 @@
 
         #main-table td {
             background-color: aqua;
+            font-size: 12px;
         }
 
         #main-table td:first-child {
@@ -133,7 +149,38 @@
         #main-table td:nth-child(even) {
             background: cadetblue;
         }
-    </style>
+
+        .video {
+            background-color: plum;
+            padding: 12px 0px;
+            border-radius: 6px;
+        }
+
+        form {
+            background-color: darkred;
+            padding: 12px 0;
+            margin: 6px;
+            border-radius: 12px;
+            color: white;
+        }
+
+        input,
+        textarea,
+        label {
+            font-size: 20px;
+            text-align: center;
+            margin: 6px;
+        }
+
+        button[type="submit"] {
+            background-color: greenyellow;
+            font-size: 20px;
+            width: 100px;
+            height: 40px;
+            border-radius: 6px;
+            border: none;
+        }
+    </style> -->
 </head>
 
 <body>
@@ -170,7 +217,7 @@
             <img src="https://fitnesstwenty.com/wp-content/uploads/2020/10/71-1024x320.jpg" alt="71.jpg" width="100%">
         </a>
         <div class="sub-title">健身的10個好處</div>
-        <ul>
+        <!-- <ul class="text-1">
             <li>增加基礎代謝率</li>
             <li>預防疾病和提高免疫力</li>
             <li>改善心情</li>
@@ -182,8 +229,8 @@
             <li>釋放工作的壓力</li>
             <li>增加肌肉助於減肥</li>
         </ul>
-        <hr>
-        <ol type="1">
+        <hr> -->
+        <ol type="1" class="text-1">
             <li>增加基礎代謝率</li>
             <li>預防疾病和提高免疫力</li>
             <li>改善心情</li>
@@ -197,7 +244,7 @@
         </ol>
         <hr>
         <div class="sub-title">好文章連結</div>
-        <ul style="list-style: none;">
+        <ul>
             <li>
                 <a href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6"
                     target="_blank">
@@ -215,13 +262,19 @@
                 <a href="https://fitnesstwenty.com/benefits-of-workout/#%E5%81%A5%E8%BA%AB%E7%9A%84%E9%A1%9E%E5%9E%8B%EF%BC%88%E6%89%BE%E5%88%B0%E9%81%A9%E5%90%88%E4%BD%A0%E7%9A%84%E5%81%A5%E8%BA%AB%E6%96%B9%E5%BC%8F%EF%BC%81%EF%BC%89"
                     target="_blank">健身的類型（找到適合你的健身方式！）</a>
             </li>
+            <li>
+                <a href="https://fitnesstwenty.com/benefits-of-workout/#%E7%B8%BD%E7%B5%90" target="_blank">
+                    總結
+                </a>
+            </li>
         </ul>
         <br>
         <small>參考連結
             <a href="https://fitnesstwenty.com/benefits-of-workout/">https://fitnesstwenty.com/benefits-of-workout/</a>
         </small>
-        <br>
+        <hr>
         <div class="sub-title">一天所需卡路里</div>
+
         <table id="main-table" border="2">
             <thead>
                 <tr>
@@ -252,50 +305,60 @@
                 </tr>
             </tbody>
         </table>
-        <a href="./bmi.html">計算BMI:</a>&nbsp;
-        一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
-        <b>計算所需熱量:</b>
-        因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。<br>
-        <b>力行健康體重管理:</b>
-        多運動和健康吃，肥胖者每天減少攝取500大卡熱量；或減少攝食300大卡熱量，增加體能活動多消耗200大卡，就可以每周減重約0.5公斤。提醒您!控制體重時，每日熱量攝取不可低於1200大卡。
-
+        <p class="text-2 text-4">
+            <a href="./bmi.html">計算BMI:</a>&nbsp;
+            一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
+            <b>計算所需熱量:</b>
+            因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。<br>
+            <!-- <b>力行健康體重管理:</b>
+            多運動和健康吃，肥胖者每天減少攝取500大卡熱量；或減少攝食300大卡熱量，增加體能活動多消耗200大卡，就可以每周減重約0.5公斤。提醒您!控制體重時，每日熱量攝取不可低於1200大卡。 -->
+        </p>
         <hr>
-        <div class="sub-title">健身影片</div>
-        <iframe width="45%" height="530" src="https://www.youtube.com/embed/20uf1EcGqjY" frameborder="0"></iframe>
-        <iframe width="45%" height="530" src="https://www.youtube.com/embed/GMVNUgjNdlE"
-            title="「女孩健身計畫」網路健身老實說｜看影片運動 真的有用？？？？？" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <video src="video\big_buck_bunny_720p_1mb.mp4" controls width="50%">影片載入失敗</video>
+        <div class="sub-title">健身影片</div><br><br>
+        <div id="video">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/20uf1EcGqjY"
+                title="30分鐘爆汗燃脂+核心訓練│無須器材、無跳躍、不傷手腕│跟著我甩掉多餘體脂肪！30 Min Athome fat burn, no equipment needed, no jumping"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/GMVNUgjNdlE"
+                title="「女孩健身計畫」網路健身老實說｜看影片運動 真的有用？？？？？" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <!-- <video src="video\big_buck_bunny_720p_1mb.mp4" controls width="50%">影片載入失敗</video> -->
+        </div>
         <hr>
 
         <div class="sub-title">填寫表單</div>
-        需要更多資訊?免費索取健身資訊<br>
-        <b>前100名還贈送［我愛健身］書籍一本!</b>
+        <div class="text-1">
+            需要更多資訊?免費索取健身資訊<br>
+            <b>前100名還贈送［我愛健身］書籍一本!</b>
+        </div>
         <form action="" method="get">
             <!-- GET or POST-->
-            <p>
+            <!-- <p>
                 <label for="name">USERNAME</label>
                 <input type="text" name="username" id="name">
-            </p>
+            </p> -->
             <p>
                 <label for="email">EMAIL</label>
                 <input type="email" name="email" id="email" placeholder="Enter your Email">
             </p>
-            <p>
+            <!-- <p>
                 <label for="date">DATE</label>
                 <input type="date" name="date" id="date">
             </p>
             <p>
                 <label for="file">FILES</label>
                 <input type="file" name="file" id="file">
-            </p>
+            </p> -->
             <label for="comment">您的寶貴意見</label><br>
             <textarea name="" id="comment" cols="30" rows="10"></textarea><br>
             <button type="submit">確認</button>
 
         </form>
-
 
         <br><br><br><br>
     </div>
